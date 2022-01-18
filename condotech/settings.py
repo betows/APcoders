@@ -77,8 +77,11 @@ WSGI_APPLICATION = 'condotech.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'condotech',
+        'USER': 'postgres',
+        'PASSWORD': 'bb556655',
+        'HOST': 'localhost'
     }
 }
 
