@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Inquilinos, Unidades
 
-# Register your models here.
+
+admin.site.register(Inquilinos)
+admin.site.register(Unidades)

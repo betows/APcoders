@@ -4,7 +4,7 @@
     <!-- Preloader -->
     <div id="preloader">
         <i class="circle-preloader"></i>
-        <img src="{% static 'img/core-img/logo.png' %}" alt="">
+        <img src="{% static 'img/core-img/logo.png' %}" alt="logo">
     </div>
 
     <!-- Search Wrapper -->
@@ -32,16 +32,17 @@
                 <div class="row">
                     <div class="col-12 col-md-8">
                         <div class="receipe-headline my-5">
-                            <span>30 de Fevereiro, 2000</span>
-                            <h2>Roberto amaral</h2>
+                            <h2>{{inquilino.nome_inquilino}}</h2>
                             <div class="receipe-duration">
-                                <h6>idade: 26 anos</h6>
-                                <h6>telefone: (47)99684-0087</h6>
-                                <h6>E-mail: robertoamaral56@gmail.com</h6>
+                                <h6>Idade: {{ inquilino.idade_inquilino }}</h6>
+                                <h6>Telefone: {{ inquilino.telefone_inquilino }}</h6>
+                                <h6>E-mail: {{ inquilino.email_inquilino }}</h6>
                                 <h6>Apartamento: 102 </h6>
+                                <h2><a href="/unidade">Unidade</a></h2>
                             </div>
                         </div>
                     </div>
+                 </div>
 
                 <div class="row">
                     <div class="col-12 col-lg-8">

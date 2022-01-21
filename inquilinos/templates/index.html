@@ -30,21 +30,51 @@
     <section class="best-receipe-area">
         <div class="container">
             <div class="row">
-                {% for key,value in nome_inquilino.items %}
+                {% if inquilinos %}
+                {% for inquilino in inquilinos %}
                 <!-- Single Best Receipe Area -->
-                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="col-10 col-sm-4 col-lg-2 align-items: center">
                     <div class="single-best-receipe-area mb-30">
-                        <img src="{% static 'img/bg-img/foto_receita.png' %}" alt="">
+                        <a href="{% url 'inquilino' inquilino.id %}">
+                        <img src="{% static 'img/bg-img/inquilino_icon.png' %}" alt="">
+                        </a>
                         <div class="receipe-content">
-                            <a href="{% url 'inquilino' %}">
-                                <h5>{{ value }}</h5>
+                            <a href="{% url 'inquilino' inquilino.id %}">
+                                <h5>{{ inquilino.nome_inquilino }}</h5>
                             </a>
                             </div>
                         </div>
                     </div>
                     {% endfor %}
+                    {% else %}
+                    {% endif %}
+                    
                 </div>
             </div>
+
+            <div class="container">
+                <div class="row">
+                    {% if unidades %}
+                    {% for unidade in unidades %}
+                    <!-- Single Best Receipe Area -->
+                    <div class="col-10 col-sm-4 col-lg-2 align-items: center">
+                        <div class="single-best-receipe-area mb-30">
+                            <a href="{% url 'unidade' unidade.id %}">
+                            <img src="{% static 'img/bg-img/inquilino_icon.png' %}" alt="">
+                            </a>
+                            <div class="receipe-content">
+                                <a href="{% url 'unidade' unidade.id %}">
+                                    <h5>Condominio:{{ unidade.condominio_unidade }}</h5>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        {% else %}
+                        {% endif %}
+                        
+                    </div>
+                </div>
         </section>
 
                 
