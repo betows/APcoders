@@ -12,7 +12,7 @@ Django software para administração de condomínios
 
 ## 💻 Requerimentos
 
-Before starting, make sure you have met the following requirements: 
+Antes de começar certifique-se de ter os seguintes requerimentos: 
 
 * Most recent version of `Django`
 * Python `pip` installed 
@@ -31,10 +31,13 @@ Entre na página root do projeto
 ```
 cd desafioAPcoders/
 ```
-
 Inicie o virtualenv 
 ```
-Instale as dependencias necessárias
+python -m virtualenv .venv
+```
+Instale as dependencias
+```
+pip install -r requirements.txt
 ```
 
 ## ☕ Usando condotech
