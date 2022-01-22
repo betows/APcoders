@@ -48,33 +48,10 @@
                     {% endfor %}
                     {% else %}
                     {% endif %}
-                    
+                </div>    
                 </div>
             </div>
 
-            <div class="container">
-                <div class="row">
-                    {% if unidades %}
-                    {% for unidade in unidades %}
-                    <!-- Single Best Receipe Area -->
-                    <div class="col-10 col-sm-4 col-lg-2 align-items: center">
-                        <div class="single-best-receipe-area mb-30">
-                            <a href="{% url 'unidade' unidade.id %}">
-                            <img src="{% static 'img/bg-img/inquilino_icon.png' %}" alt="">
-                            </a>
-                            <div class="receipe-content">
-                                <a href="{% url 'unidade' unidade.id %}">
-                                    <h5>Condominio:{{ unidade.condominio_unidade }}</h5>
-                                </a>
-                                </div>
-                            </div>
-                        </div>
-                        {% endfor %}
-                        {% else %}
-                        {% endif %}
-                        
-                    </div>
-                </div>
         </section>
 
                 
