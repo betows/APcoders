@@ -1,6 +1,8 @@
-# Distance Meter
+# Condotech (Veja abaixo das imagens como rodar a aplicação)
 
-<img src="example.png" alt="Example image">
+<img src="home.png" alt="Example image">
+<img src="adicionar.png" alt="Example image">
+<img src="inquilino.png" alt="Example image">
 
 Django software para administração de condomínios
 ### Next steps
