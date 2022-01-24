@@ -54,7 +54,7 @@ para usar a aplicação faça o seguinte:
 Com o ambiente virtual ativado use o comando:
 
 ```
-python manage.py run
+python manage.py runserver
 ```
 
 ## 📫 contribuindo com condotech
